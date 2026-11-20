@@ -1,0 +1,817 @@
+/* =====================================
+   KAMRAN GUEST HOUSE
+   PREMIUM HOTEL WEBSITE THEME
+===================================== */
+
+/* 1. GOOGLE FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* 2. GLOBAL VARIABLES */
+
+:root {
+    --primary: #173b35;
+    --primary-light: #28564c;
+    --gold: #c9a46a;
+    --gold-dark: #a98148;
+    --cream: #f8f5ef;
+    --white: #ffffff;
+    --dark: #202723;
+    --gray: #777777;
+    --border: #e8e2d7;
+
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'DM Sans', sans-serif;
+
+    --shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+
+/* 3. GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* 4. HEADER */
+
+.main-header {
+    background: var(--primary);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: var(--gold);
+    font-family: var(--heading-font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    display: block;
+    color: var(--white);
+    font-family: var(--body-font);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 28px;
+    margin: 0;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.book-btn {
+    background: var(--gold);
+    color: var(--primary);
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: var(--white);
+    color: var(--primary);
+}
+
+
+/* 5. HERO SECTION */
+
+.hero-section {
+    min-height: 650px;
+
+    background:
+    url("https://images.unsplash.com/photo-1611892440504-42a792e24d32")
+    center/cover no-repeat;
+}
+
+.hero-overlay {
+    min-height: 650px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(15,35,30,0.88),
+        rgba(15,35,30,0.25)
+    );
+
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: var(--white);
+}
+
+.hero-subtitle {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.2;
+    margin: 22px 0;
+}
+
+.hero-description {
+    font-size: 17px;
+    max-width: 550px;
+    color: #f1eee8;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 15px 32px;
+    background: var(--gold);
+    color: var(--primary);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: var(--white);
+    transform: translateY(-4px);
+}
+
+
+/* 6. COMMON SECTION STYLING */
+
+.section-subtitle {
+    color: var(--gold-dark);
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+/* 7. ABOUT SECTION */
+
+.about-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+}
+
+.about-text h2 {
+    font-size: 42px;
+    color: var(--primary);
+    margin: 15px 0 20px;
+}
+
+.about-text p {
+    color: var(--gray);
+    margin-bottom: 16px;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 27px;
+    background: var(--primary);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.about-btn:hover {
+    background: var(--gold-dark);
+}
+
+
+/* 8. ROOMS SECTION */
+
+.rooms-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.room-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.room-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 25px;
+}
+
+.room-info h3 {
+    color: var(--primary);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    color: var(--gray);
+}
+
+.room-price {
+    color: var(--gold-dark);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.room-btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: var(--primary);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.room-btn:hover {
+    background: var(--gold-dark);
+}
+
+
+/* 9. FACILITIES SECTION */
+
+.facilities-section {
+    padding: 90px 0;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.facilities-section .section-title {
+    color: var(--white);
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.facility-card {
+    text-align: center;
+    padding: 35px 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    background: var(--primary-light);
+    border-color: var(--gold);
+}
+
+.facility-card i {
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.facility-card h3 {
+    font-size: 20px;
+}
+
+
+/* 10. GALLERY SECTION */
+
+.gallery-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+
+/* 11. BOOKING SECTION */
+
+.booking-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.booking-container {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px;
+    background: var(--cream);
+    box-shadow: var(--shadow);
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    outline: none;
+    font-family: var(--body-font);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+}
+
+.form-full {
+    grid-column: 1 / -1;
+}
+
+.booking-submit {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-submit:hover {
+    background: var(--gold-dark);
+}
+
+
+/* 12. CONTACT SECTION */
+
+.contact-section {
+    padding: 90px 0;
+    background: var(--cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.contact-card i {
+    font-size: 32px;
+    color: var(--gold-dark);
+}
+
+.contact-card h3 {
+    color: var(--primary);
+    margin: 12px 0;
+}
+
+
+/* 13. FOOTER */
+
+.main-footer {
+    background: #102c27;
+    color: var(--white);
+    padding: 65px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-grid h3 {
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.footer-grid p,
+.footer-grid a {
+    color: #d2d8d3;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-grid a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    text-align: center;
+    padding-top: 20px;
+    color: #cbd1cc;
+    font-size: 13px;
+}
+
+
+/* 14. BUTTONS AND ANIMATIONS */
+
+button,
+a {
+    transition: all 0.3s ease;
+}
+
+.room-card,
+.facility-card,
+.contact-card {
+    border-radius: 5px;
+}
+
+section {
+    scroll-margin-top: 85px;
+}
+
+
+/* 15. RESPONSIVE DESIGN */
+
+@media (max-width: 992px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-overlay {
+        padding: 35px 20px;
+        min-height: 550px;
+    }
+
+    .hero-section {
+        min-height: 550px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .rooms-grid,
+    .gallery-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-container {
+        padding: 25px 18px;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-full {
+        grid-column: auto;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title,
+    .about-text h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 2px;
+    }
+
+    .book-btn {
+        padding: 10px 16px;
+    }
+}
+.facility-card {
+  background: #fff;
+  padding: 35px 25px;
+  text-align: center;
+  border: 1px solid #e8e2d8;
+  transition: 0.3s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.facility-card i {
+  font-size: 38px;
+  color: #c49a5a;
+}
+
+.facility-card h3 {
+  color: #173b35;
+  margin: 18px 0 10px;
+}
+
+.facility-card p {
+  color: #777;
+  line-height: 1.7;
+}
+.gallery-item {
+  overflow: hidden;
+  height: 260px;
+  border-radius: 5px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+.booking-section {
+  padding: 90px 0;
+  background: #f5f2eb;
+}
+
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.booking-text h2 {
+  color: #173b35;
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.booking-text p {
+  line-height: 1.8;
+  color: #777;
+}
+
+.booking-form {
+  background: white;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #173b35;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 13px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100%;
+}
+
+.booking-btn {
+  grid-column: 1 / -1;
+  background: #173b35;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.booking-btn:hover {
+  background: #c49a5a;
+}
+
+#bookingMessage {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+}
+.rooms-hero {
+    padding: 100px 0;
+    text-align: center;
+    background: #173b35;
+    color: white;
+}
+
+.rooms-hero h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.rooms-hero p:last-child {
+    color: #eee;
+}
+
+.rooms-hero .section-subtitle {
+    color: #d4ad70;
+}
+
+.rooms-section {
+    padding: 80px 0;
+}
+
+.room-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.main-footer {
+    background: #173b35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}

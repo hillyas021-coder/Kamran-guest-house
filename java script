@@ -1,0 +1,7 @@
+// Kamran Guest House Website
+
+console.log("Welcome to Kamran Guest House!");
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Website is fully loaded.");
+});
