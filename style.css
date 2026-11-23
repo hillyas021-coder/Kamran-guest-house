@@ -815,3 +815,39 @@ section {
     text-align: center;
     padding: 25px;
 }
+<footer class="main-footer" id="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+                <h3>KAMRAN GUEST HOUSE</h3>
+                <p>
+                    Experience comfort, hospitality and
+                    relaxation in the heart of Mirpur, AJK.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Our Rooms</a>
+                <a href="#about">About Us</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Mirpur, Azad Kashmir, Pakistan</p>
+                <p>Contact: Add your phone number</p>
+                <p>Email: Add your email</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Kamran Guest House. All Rights Reserved.</p>
+        </div>
+
+    </div>
+</footer>
